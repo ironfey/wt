@@ -11,5 +11,13 @@ Build with \
 
 Required manual fixes
 ---------------------
-For the Debug configurations:\
-Under Project Properties->Linker->Input remove all non debug wt libs (e.g. wt.lib, debug version is wtd.lib)
+- Set `hello.wt` as StartUp project (right-click on project -> Set as StartUp project)
+- For the Debug configurations: Under Project Properties->Linker->Input remove all non debug wt libs (e.g. wt.lib, debug version is wtd.lib)
+- Ensure the .dll files are in your path
+
+Running the application
+-----------------------
+Start with \
+`--http-address=0.0.0.0 --http-port=8080 --docroot=.` (Add to Project->Properties->Debugging->Command Arguments) \
+
+Access application from browser from `localhost:8080`

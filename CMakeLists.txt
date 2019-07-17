@@ -1,12 +1,13 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.14)
 Project(hello)
 
-INCLUDE_DIRECTORIES(./Wt-4.0.5-msvs2017-Windows-x64-SDK/include)
-LINK_DIRECTORIES(./Wt-4.0.5-msvs2017-Windows-x64-SDK/lib)
-
+INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/Wt-4.0.5-msvs2017-Windows-x64-SDK/include)
+LINK_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/Wt-4.0.5-msvs2017-Windows-x64-SDK/lib)
 
 ADD_EXECUTABLE(hello.wt
-  hello.cpp
+  main.cpp
+  HelloApplication.cpp
+  HelloApplication.hpp
 )
 
 # For FastCGI deployment:

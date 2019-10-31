@@ -17,7 +17,7 @@ Required manual fixes
 
 Running the application
 -----------------------
-Start with \
-`--http-address=0.0.0.0 --http-port=8080 --docroot=.` (Add to Project->Properties->Debugging->Command Arguments) \
+To start from Visual Studio: \
+Add to Project->Properties->Debugging->Command Arguments `--http-address=0.0.0.0 --http-port=8080 --docroot=.`
 
-Access application from browser from `localhost:8080`
+Access application from browser at `localhost:8080`
